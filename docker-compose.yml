@@ -2,7 +2,7 @@ version: '3'
 services:
   compiler-env:
     build: ./
-    container_name: CompilerEnv
+    container_name: CompilerEnvClass
     volumes:
       - ./files:/app
     working_dir: /app
