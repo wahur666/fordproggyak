@@ -415,7 +415,7 @@ Vegyük szemügyre a fájl legelejét, mivel ott van jelentős változás:
 %right NEM
 ```
 
-Definiáltunk a tokeneinket, de megjelennek precedencia szabályok és kötési oldal. Vegyük észre, a `%token` nem tartalmazza az alatta felsorolt szabályokat. Ez nagyon fontos az egyértelműség szempontjából. Nem definiálhatunk egy `tokent` készter!
+Definiáltuk a tokeneket, és most megjelennek a precedencia szabályok és kötési oldal. Vegyük észre, a `%token` nem tartalmazza az alatta felsorolt szabályokat. Ez nagyon fontos az egyértelműség szempontjából. Nem definiálhatunk egy `tokent` készter!
 
 Lentről felfelé csökken a precedencia a jelekre. Erre egy példa a logikai `NEM`. A `NEM` művletet kell előbb elvégezni, mielőtt bármi más műveletet alkalmaznánk. Köztudott tény, hogy az `ES` erősebben köt mint a `VAGY`, és ez itt meg is jelenik a kódban, előbb van a `VAGY` majd utána az `ES`.
 
