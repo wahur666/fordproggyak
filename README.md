@@ -33,7 +33,7 @@ Ez az eszköz fogja felépíteni az Abstract Syntax Tree-t (AST). Gyakorlatban m
 <a id="markdown-példák" name="példák"></a>
 ## Példák
 
-Példák elérhetők a következő linken a tanárúr weboldalán: [http://deva.web.elte.hu/fordprog/bisonc++.zip](http://deva.web.elte.hu/fordprog/bisonc++.zip).
+Példák elérhetők a következő linken a tanár úr weboldalán: [http://deva.web.elte.hu/fordprog/bisonc++.zip](http://deva.web.elte.hu/fordprog/bisonc++.zip).
 
 <a id="markdown-1-példa" name="1-példa"></a>
 ### 1. példa
@@ -142,9 +142,9 @@ folytatas:
 
 Első sorában, egy include szerepel, ami majd jelez az Bison C++-nak, hogy az `<iostream>`-re szükség lesz, mint include.
 
-Következő sorban található a `%token` itt kell felsorolni az összes tokent amit támogat a nyelvünk. Ezek lesznem a nem terminálisok amiből építhetjük majd a nyelvtanunkat.
+Következő sorban található a `%token` itt kell felsorolni az összes tokent amit támogat a nyelvünk. Ezek lesznek a nem terminálisok amiből építhetjük majd a nyelvtanunkat.
 
-**FONTOS**: Itt a nagybetűs szövegek jelentik a Terminális jeleket, és a kisbetűs szövegek a Nem Terminálist.
+**FONTOS**: Itt a nagybetűs szövegek jelölik a Terminális szimbólumokat, és a kisbetűs szövegek a Nem Terminálist.
 
 Utána következnek a produkciós szabályok. Aki látott már `goto`-t az más ismeretes a `label` fogalmával. Itt hasonló szintaktikával adjuk meg a szabályokat. Például a `start` szabály a következő:
 
@@ -417,7 +417,7 @@ Vegyük szemügyre a fájl legelejét, mivel ott van jelentős változás:
 
 Definiáltuk a tokeneket, és most megjelennek a precedencia szabályok és kötési oldal. Vegyük észre, a `%token` nem tartalmazza az alatta felsorolt szabályokat. Ez nagyon fontos az egyértelműség szempontjából. Nem definiálhatunk egy `tokent` készter!
 
-Lentről felfelé csökken a precedencia a jelekre. Erre egy példa a logikai `NEM`. A `NEM` művletet kell előbb elvégezni, mielőtt bármi más műveletet alkalmaznánk. Köztudott tény, hogy az `ES` erősebben köt mint a `VAGY`, és ez itt meg is jelenik a kódban, előbb van a `VAGY` majd utána az `ES`.
+Lentről felfelé csökken a precedencia a tokenekre. Erre egy példa a logikai `NEM`. A `NEM` művletet kell előbb elvégezni, mielőtt bármi más műveletet alkalmaznánk. Köztudott tény, hogy az `ES` erősebben köt mint a `VAGY`, és ez itt meg is jelenik a kódban, előbb van a `VAGY` majd utána az `ES`.
 
 Továbbá kell adni egy műveleti sorrendet is, erre lesz segítségünkre a `%right`, `%left` műveltek. Mint a nevük is mondja, jobbra és balra való kötést fejeznek ki.
 
