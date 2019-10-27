@@ -62,7 +62,8 @@ A fájlok rendere a következők:
 
 3. `jo.txt`, `rossz.txt`, ezek a teszt fájlok, nincs bennük semmi érdekes.
 
-4. `lista.cc`, a belépési pontja a programnak
+4. `lista.cc`, __FONTOS__: változott az előző beadandóhoz képest! - a belépési pontja a programnak. 
+
 
 5. `lista.l`, a Flex lexikális elemző fájla, itt szereplnek REGEX-ek amik feldarabolják a forráskódot tokenekre. 
 
