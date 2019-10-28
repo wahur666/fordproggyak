@@ -418,7 +418,7 @@ Vegyük szemügyre a fájl legelejét, mivel ott van jelentős változás:
 
 Definiáltuk a tokeneket, és most megjelennek a precedencia szabályok és kötési oldal. Vegyük észre, a `%token` nem tartalmazza az alatta felsorolt szabályokat. Ez nagyon fontos az egyértelműség szempontjából. Nem definiálhatunk egy `tokent` készter!
 
-Lentről felfelé csökken a precedencia a tokenekre. Erre egy példa a logikai `NEM`. A `NEM` művletet kell előbb elvégezni, mielőtt bármi más műveletet alkalmaznánk. Köztudott tény, hogy az `ES` erősebben köt mint a `VAGY`, és ez itt meg is jelenik a kódban, előbb van a `VAGY` majd utána az `ES`.
+Fentről lefelé erősödik a precedencia a tokenekre. Erre egy példa a logikai `NEM`. A `NEM` művletet kell előbb elvégezni, mielőtt bármi más műveletet alkalmaznánk. Köztudott tény, hogy az `ES` erősebben köt mint a `VAGY`, és ez itt meg is jelenik a kódban, előbb van a `VAGY` majd utána az `ES`.
 
 Továbbá kell adni egy műveleti sorrendet is, erre lesz segítségünkre a `%right`, `%left` műveltek. Mint a nevük is mondja, jobbra és balra való kötést fejeznek ki.
 
